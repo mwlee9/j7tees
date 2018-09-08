@@ -165,13 +165,7 @@ app.post('/FormProcessor', function (req, res) {
       Company: req.body.Company,
       Message: req.body.Message
     }
-    // ###Enable the two lines below to activate DB logging###
-    // var formcollection = new SearchModReq.SearchFormMod(item);
-    // formcollection.save();
 
-    // FormModel.ContactFormMod.find({"FirstName":"Mathew"},function(err,docs) {
-    //   res.send(docs);
-    // });
     res.send("<h1>Form Submitted!</h1><br><a href='/'>Return To The Home Page</a>");
 
   };
@@ -253,13 +247,7 @@ app.post('/feedbackFormProcessor', function (req, res) {
       Company: req.body.Company,
       Message: req.body.Message
     }
-    // ###Enable the two lines below to activate DB logging###
-    // var formcollection = new SearchModReq.SearchFormMod(item);
-    // formcollection.save();
 
-    // FormModel.ContactFormMod.find({"FirstName":"Mathew"},function(err,docs) {
-    //   res.send(docs);
-    // });
     res.send("<h1>Form Submitted!</h1><br><a href='/'>Return To The Home Page</a>");
 
   };
