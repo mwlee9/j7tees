@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include partials/head.ejs %>
+		<% include partials/navbar.ejs %>
+
+  </head>
+
+<body>
+  <br>
+  <div class="container">
+    <form action="/SearchFormProcessor" method="post">
+      <div class="form-group">
+        <label for="">Search For:</label>
+        <input type="text" class="form-control" name="Query" placeholder="Enter Query">
+      </div>
+
+  <div class="radio">
+    <label><input type="radio" name="option" value= "FirstName" checked>First Name</label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" name="option" value = "LastName">Last Name</label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" name="option" value = "Email">Email</label>
+  </div>
+
+      <button type="submit" class="btn btn-default">Submit</button>
+
+    </form>
+  </div>
+
+<div class="container">
+  <br>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Company</th>
+      <th>Message</th>
+    </tr>
+  </thead>
+  <%for(var i= 0; i < QueryResults.length; i++) { %>
+    <tr>
+      <td><%=i+1%></td>
+      <td><%=QueryResults[i].FirstName%></td>
+      <td><%=QueryResults[i].LastName%></td>
+      <td><%=QueryResults[i].Email%></td>
+      <td><%=QueryResults[i].Company%></td>
+      <td><%=QueryResults[i].Message%></td>
+    </tr>
+  <%}%>
+
+</div>
+
+
+</body>
+
+  <% include partials/scripts.ejs %>
+</html>

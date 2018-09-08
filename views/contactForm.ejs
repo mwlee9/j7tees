@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include partials/head.ejs %>
+		<% include partials/navbar.ejs %>
+    <title>Contact Page</title>
+
+  <body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">Contact Us!</h1>
+      <h3 class="text-center">Please fill out the form below and we will respond to your request and questions as soon as possible!</h3>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+<br>
+  <form action="/FormProcessor" method="post">
+    <div class="form-group">
+      <label for="">First Name</label>
+      <input type="text" class="form-control" name="FirstName" placeholder="Enter Name">
+    </div>
+
+      <form action="/FormProcessor" method="post">
+        <div class="form-group">
+          <label for="">Last Name</label>
+          <input type="text" class="form-control" name="LastName" placeholder="Enter Name">
+        </div>
+
+    <div class="form-group">
+      <label for="">Email</label>
+      <input class="form-control" type="email" name="Email" value="" placeholder="Enter Email">
+    </div>
+
+    <div class="form-group">
+      <label for="">Company/Organization</label>
+      <input class="form-control" type="text" name="Company" value="" placeholder="Enter Company">
+    </div>
+
+    <div class="form-group">
+      <label for="">Message</label>
+      <textarea class="form-control" name="Message" rows="8" cols="80" placeholder = "Enter Message"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-default">Submit</button>
+
+    <br>
+
+  </form>
+</div>
+
+</div>
+
+  </body>
+
+  <% include partials/scripts.ejs %>
+</html>

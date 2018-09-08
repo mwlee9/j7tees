@@ -1,0 +1,221 @@
+/*General Styling*/
+body {
+	background: #3B4649;
+	color: #f7f7f7;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+	font-weight: bold;
+}
+
+p {
+	font-size: 16px;
+	color: White;
+}
+/***************************************************************/
+
+/*Text with embedded logo title styling*/
+body > div.jumbotron > div:nth-child(1) > div > h1 {
+	padding-left: 30px;
+}
+
+body > div.jumbotron > div:nth-child(1) > div > h1 > img {
+	width: 20%;
+	height: auto;
+	display: inline-block;
+}
+
+.logotextcombo {
+
+	position: relative;
+	width: 100%;
+}
+/*****************************************************************************/
+
+.col-md-3 h3, p {
+  text-align: center;
+}
+
+.col-md-3 ul {
+	text-align:center;
+	list-style-position: inside;
+	padding: 0px;
+}
+
+.jumbotron>div>.headerimg>img {
+  width: 100%;
+  display: block;
+}
+
+/* Facebook and Instagram Buttons*/
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.smbtns .fa {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 40px;
+  /*width: 525px;*/
+  width: 100%;
+  height: 70px;
+  text-decoration: none;
+  margin: 5px 0px;
+}
+
+.smbtns p {
+  font-size: 25px;
+  text-align: center;
+}
+
+/***************************************************************/
+
+/*Navbar styling*/
+.navbar-inverse {
+	background: #2F383B;
+	border: 0;
+}
+.navbar-inverse .navbar-nav li a {
+	color: ;
+	font-size: 16px;
+}
+
+.call-to-action {
+	text-align: center;
+}
+.call-to-action p {
+	margin-bottom: 30px;
+	font-family: sans-serif;
+}
+/**************************************************************/
+
+/*glyphicon styling Home Page*/
+.glyphicon-large {
+	font-size: 100px;
+}
+
+.glyphiconalign {
+    text-align: center;
+		font-size: 30px;
+}
+/***************************************************************/
+
+/*jumbotron styling*/
+.jumbotron {
+	background: #062F4F;
+	color: white;
+	text-align: center;
+}
+.jumbotron p {
+	color: white;
+	font-size: 26px;
+}
+
+/***************************************************************/
+
+/*Navbar Styling*/
+.navbar {
+	margin-bottom: 0;
+}
+
+input {
+  color: Grey;
+
+}
+
+textarea {
+  color: Grey;
+}
+
+.navbar-brand > img {
+	width: auto;
+	height: 100%;
+	display: block;
+	padding: 5px;
+
+}
+
+.navbar-brand {
+	padding: 0px;
+}
+
+.item {
+  max-width: auto;
+	height: 250px;
+}
+
+/***************************************************************/
+
+/*Carousel Styling*/
+.carousel-inner > .item > img {
+    margin: auto;
+		width: 300;
+		height: 168;
+
+}
+
+.carousel-inner > .item > a > img {
+    margin-left: auto;
+		margin-right: auto;
+}
+
+#myCarousel > div > div.item.active > div > a > h3 > u {
+	margin-top: 170px;
+}
+
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+}
+
+#myCarousel > div > div.item.active > div > a > h3 {
+	margin-top: 0px;
+}
+
+#myCarousel > div > div.item.active > div > p > u {
+	color: black;
+	padding-right: 20px;
+}
+
+#myCarousel > div > div.item.active > img {
+	width: 300;
+	height: 168;
+}
+
+/**************************************************************/
+
+/*Footer Styling*/
+footer {
+  background-color: #4F5C5F;
+
+}
+
+.footer p {
+	color: #C3C3C3;
+	font-size: 13px;
+}
+
+.footer a {
+	color: white;
+}
+
+/***************************************************************/
+
+/*Pricing page image dynamic sizing*/
+body > div > img {
+	width: 100%;
+	height: auto;
+}

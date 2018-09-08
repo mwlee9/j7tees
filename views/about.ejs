@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include partials/head.ejs %>
+		<% include partials/navbar.ejs %>
+  </head>
+
+<body>
+
+  <div class="container">
+    <br>
+    <p>Our website is currently under construction! Come back soon for new and exciting updates!</p>
+  </div>
+
+</body>
+
+<div class="navbar navbar-fixed-bottom">
+
+  <div id="Visitor">
+  <p>You are visitor: <%=count%></p>
+  </div>
+  <p>Website built by Mathew Lee</p>
+  <p id = "ShowVisitor">Powered by Node and Express</p>
+
+</div>
+
+  <% include partials/scripts.ejs %>
+
+  <script>
+  $("#Visitor").hide();
+  $("#ShowVisitor").click(function(){
+      $("#Visitor").show();
+  });
+
+  </script>
+
+</html>
