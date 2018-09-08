@@ -144,7 +144,7 @@ app.post('/FormProcessor', function (req, res) {
       service: 'Gmail',
       auth: {
         user: "j7tees@gmail.com",
-        pass: j7teesPassword
+        pass: process.env.J7TEES_PASSWORD
       }
     });
 
@@ -232,7 +232,7 @@ app.post('/feedbackFormProcessor', function (req, res) {
       service: 'Gmail',
       auth: {
         user: "j7tees@gmail.com",
-        pass: j7teesPassword
+        pass: process.env.J7TEES_PASSWORD
       }
     });
 
